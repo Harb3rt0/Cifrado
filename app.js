@@ -1,3 +1,4 @@
+// 1. Archivo principal de configuracion
 const express = require('express');
 const cors = require('cors');
 const path = require('path');

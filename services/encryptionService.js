@@ -1,3 +1,4 @@
+// 4. Servicios de encriptacion
 function isLower(char) {
     return char === char.toLowerCase() && char !== char.toUpperCase();
 }
@@ -6,6 +7,7 @@ function sumarEnRango(valor, n, max) {
     return ((valor + n) % max + max) % max;
 }
 
+// 4.1. Cifrado cesar
 const cifradoCesar = (alfabeto, texto, desplazamiento) => {
     if (!alfabeto) {
         return texto.split("").map(char => {
@@ -37,6 +39,7 @@ const cifradoCesar = (alfabeto, texto, desplazamiento) => {
     return cipherText.join("");
 }
 
+// 4.2. Cifrado Atbash
 const cifradoAtbash = (alfabeto, texto) => {
     if (!alfabeto) {
         return texto.split("").map(char => {
